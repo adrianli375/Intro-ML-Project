@@ -68,3 +68,32 @@ base                  *  /Users/adrianli375/miniconda3
 course1                  /Users/adrianli375/miniconda3/envs/course1
 ```
 which means that I have two virtual environments: `base` and `course1`. The asterisk (*) indicates that the current environment that I am in is the `base` (default) environment. 
+
+2. Download [`fypenv.yml`](https://github.com/adrianli375/Test-Project/blob/main/docs/fypenv.yml) and move the file to your working directory. 
+
+3. Create an environment by running the command
+```
+conda env create -f fypenv.yml
+```
+which tells `conda` to download the packages and dependencies needed and put them in a virtual environment named `fyp`. The environment should be installed successfully, as you may check `conda env list` again that the environment `fyp` exists in the output. 
+
+4. Activate our newly created environment by 
+```
+conda activate fyp
+```
+After successfully activated the environment, `(fyp)` should show up in the command line of the terminal. 
+
+5. (Optional) To deactivate the environment, run the following command in the terminal: 
+```
+conda deactivate
+```
+
+# Open JupyterLab to edit code
+
+Start JupyterLab from your local machine by typing the command
+```
+jupyter lab
+```
+in the terminal from your `base` environment (NOT from any other virtual environments!)
+
+Jupyter Lab will be opened in your default browser. Under the tab `Kernel`, choose the appropriate kernel as the preferred one. You are all set! 
