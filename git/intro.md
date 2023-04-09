@@ -10,6 +10,44 @@ Once you have a repository set up, you can use Git commands to add, commit, and 
 
 While Git can be intimidating at first, it's an essential tool for anyone working on software development projects. By understanding the basics of Git, you'll be able to manage your codebase effectively and collaborate with others to create high-quality software.
 
+# How to install git through command line (Reference: [git_installation.md from a course Git repo at the University of British Columbia (UBC)](https://github.com/UBC-CS/cpsc330-2022W2/blob/main/docs/git_installation.md))
+
+## Setting up
+
+GitHub is a web-based application and does not require set-up. Since you will be cloning the [course GitHub repository](https://github.com/UBC-CS/cpsc330) in order to run the lecture notebooks locally, you need git installed locally. Follow the instructions below for this. 
+
+#### Mac Users
+
+Open Terminal (Applications –> Utilities folder or search with Spotlight). From the terminal, run the command:
+
+```
+xcode-select --install
+```
+
+This will install git and many other very useful applications as well (including Make).
+
+#### Ubuntu Users
+
+Open the terminal and install git using your system package manager. For example
+
+```
+sudo apt-get install git
+```
+
+should do the trick on Ubuntu.
+
+#### Windows Users
+
+Go to http://git-scm.com. Click on the download link, and accept all defaults in the installation process. 
+Installing git will also install for you a minimal UNIX environment with a bash shell and terminal window. 
+
+If the above does not work for you, follow the [installation instructions here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+## Testing your git installation
+
+Open your Terminal (or Git for Windows) and run `git --version`.  
+If you are returned the version of git, it means your install was successful!
+
 # Common Git Commands
 
 Here are some basic Git commands that a beginner should use:
@@ -26,9 +64,26 @@ Here are some basic Git commands that a beginner should use:
 
 `git branch`: Lists all the branches in your repository. Use git branch <branch-name> to create a new branch, and git checkout <branch-name> to switch to a different branch.
 
-`git merge`: Merges changes from one branch into another. Use git merge <branch-name> to merge changes from <branch-name> into the current branch.
-
 `git pull`: Updates your local repository with the latest changes from a remote repository. When working on a project with multiple developers, it's important to keep your local branch up to date with the changes others have made to the codebase. With git pull, you can fetch changes from the remote repository and merge them into your local branch. This ensures that you're working with the most up-to-date code and minimizes the risk of conflicts when working with others. The syntax for git pull is git pull <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to merge into your local branch.
 
 `git push`: Send changes from your local repository to a remote repository. When you've made changes to the code and want to share those changes with others or back up your work, you can use git push to update the remote repository with your local changes. This ensures that everyone working on the project has access to the latest code and reduces the risk of losing your work. The syntax for git push is git push <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to push your changes to.
 
+# How to begin using this Git repo
+
+Choose a folder/location in your local device. Once you selected your folder location, open the terminal in your device. Run `git clone <repo-link>` in your local device. For example, to get a local repository for this Git repo, you can run the command `git clone https://github.com/adrianli375/Test-Project`. 
+
+Since you will become a (potential) contributor of this repo, you would like to work separately with my work and to avoid conflicts with me while editing your files. To achieve this, you can create your own branch by the command `git branch <branch-name>`. For example, if you would like to set your branch name to `branch-1`, you can run the command `git branch branch-1`. To switch to the branch that you are working with, run `git checkout <branch-name>`. For example, if your branch name is `branch-1`, you can run the command `git checkout branch-1`. 
+
+Please ensure that you are working on a branch that is different from `main`. If you are working with the `main` branch, you risk yourself the chance of your files being overwritten by the files in the `main` branch. 
+
+After changing the branch to a suitable one (NOT the main branch), you can pull the files from this repo by running the command `git pull` at your chosen folder location. 
+
+If you finished editing in your own local repo, you can run the following commands to update your changes in your local branch: 
+0. `git init`: Initialises the `.gitignore` file in your local repository. Run this **only for the first time** before your commit. 
+1. `git add .`: Adds the file you would like to stage in your commit. 
+2. `git commit -m "<message>"`: Commits your changes with a pre-specified message. For example, if the message is "changes updated in a file", the command to be typed is `git commit -m "changes updated in a file"`. 
+3. `git push origin <branch-name>`: Push your changes to the branch you specified. For example, if your branch name is `branch-1`, the command to be typed is `git push origin branch-1`. 
+
+Finally, if you are the main contributors of the git repo, you can merge branches to the main branch to update to the latest changes. You can achieve this by the following steps: 
+1. `git checkout main`: Switch the branch to the `main` branch
+2. `git merge <branch-name>`: Merge changes from the working branch to the `main` branch. For example, if the branch that you are currently working on is `branch-1`, you should run the command `git merge branch-1`. 
