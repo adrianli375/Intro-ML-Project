@@ -14,7 +14,7 @@ While Git can be intimidating at first, it's an essential tool for anyone workin
 
 ## Setting up
 
-GitHub is a web-based application and does not require set-up. Since you will be cloning the [course GitHub repository](https://github.com/UBC-CS/cpsc330) in order to run the lecture notebooks locally, you need git installed locally. Follow the instructions below for this. 
+GitHub is a web-based application and does not require set-up. Follow the instructions below for setting up git. 
 
 #### Mac Users
 
@@ -48,26 +48,6 @@ If the above does not work for you, follow the [installation instructions here](
 Open your Terminal (or Git for Windows) and run `git --version`.  
 If you are returned the version of git, it means your install was successful!
 
-# Common Git Commands
-
-Here are some basic Git commands that a beginner should use:
-
-`git init`: Initializes a new Git repository in your current directory. This creates a hidden .git directory that contains all of the version control information for your project.
-
-`git add`: Adds a file to the staging area, which is a place to store changes you want to commit. Use git add <filename> to add a specific file or git add . to add all files in the current directory.
-
-`git commit`: Records the changes you made to the staging area and creates a new commit in the Git history. Use git commit -m "commit message" to create a new commit with a message describing the changes.
-
-`git status` Shows the current status of your repository, including which files have been modified, which files are staged for commit, and which branch you're on.
-
-`git log:` Shows a log of all the commits in your repository, including the commit message, author, and date.
-
-`git branch`: Lists all the branches in your repository. Use git branch <branch-name> to create a new branch, and git checkout <branch-name> to switch to a different branch.
-
-`git pull`: Updates your local repository with the latest changes from a remote repository. When working on a project with multiple developers, it's important to keep your local branch up to date with the changes others have made to the codebase. With git pull, you can fetch changes from the remote repository and merge them into your local branch. This ensures that you're working with the most up-to-date code and minimizes the risk of conflicts when working with others. The syntax for git pull is git pull <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to merge into your local branch.
-
-`git push`: Send changes from your local repository to a remote repository. When you've made changes to the code and want to share those changes with others or back up your work, you can use git push to update the remote repository with your local changes. This ensures that everyone working on the project has access to the latest code and reduces the risk of losing your work. The syntax for git push is git push <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to push your changes to.
-
 # How to begin using this Git repo
 
 Choose a folder/location in your local device. Once you selected your folder location, open the terminal in your device. Run `git clone <repo-link>` in your local device. For example, to get a local repository for this Git repo, you can run the command `git clone https://github.com/adrianli375/Test-Project`. 
@@ -87,3 +67,23 @@ If you finished editing in your own local repo, you can run the following comman
 Finally, if you are the main contributors of the git repo, you can merge branches to the main branch to update to the latest changes. You can achieve this by the following steps: 
 1. `git checkout main`: Switch the branch to the `main` branch
 2. `git merge <branch-name>`: Merge changes from the working branch to the `main` branch. For example, if the branch that you are currently working on is `branch-1`, you should run the command `git merge branch-1`. 
+
+# Common Git Commands
+
+Here are some basic Git commands that a beginner should use:
+
+`git init`: Initializes a new Git repository in your current directory. This creates a hidden .git directory that contains all of the version control information for your project.
+
+`git add`: Adds a file to the staging area, which is a place to store changes you want to commit. Use `git add <filename>` to add a specific file or `git add .` to add all files in the current directory.
+
+`git commit`: Records the changes you made to the staging area and creates a new commit in the Git history. Use `git commit -m "commit message"` to create a new commit with a message describing the changes.
+
+`git status` Shows the current status of your repository, including which files have been modified, which files are staged for commit, and which branch you're on.
+
+`git log:` Shows a log of all the commits in your repository, including the commit message, author, and date.
+
+`git branch`: Lists all the branches in your repository. Use git branch <branch-name> to create a new branch, and git checkout <branch-name> to switch to a different branch.
+
+`git pull`: Updates your local repository with the latest changes from a remote repository. When working on a project with multiple developers, it's important to keep your local branch up to date with the changes others have made to the codebase. With git pull, you can fetch changes from the remote repository and merge them into your local branch. This ensures that you're working with the most up-to-date code and minimizes the risk of conflicts when working with others. The syntax for git pull is git pull <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to merge into your local branch.
+
+`git push`: Send changes from your local repository to a remote repository. When you've made changes to the code and want to share those changes with others or back up your work, you can use git push to update the remote repository with your local changes. This ensures that everyone working on the project has access to the latest code and reduces the risk of losing your work. The syntax for git push is git push <remote> <branch>, where <remote> is the name of the remote repository and <branch> is the branch you want to push your changes to.
