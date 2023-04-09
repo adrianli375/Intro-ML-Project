@@ -78,9 +78,9 @@ Here are some basic Git commands that a beginner should use:
 
 `git commit`: Records the changes you made to the staging area and creates a new commit in the Git history. Use `git commit -m "commit message"` to create a new commit with a message describing the changes.
 
-`git status` Shows the current status of your repository, including which files have been modified, which files are staged for commit, and which branch you're on.
+`git status`: Shows the current status of your repository, including which files have been modified, which files are staged for commit, and which branch you're on.
 
-`git log:` Shows a log of all the commits in your repository, including the commit message, author, and date.
+`git log`: Shows a log of all the commits in your repository, including the commit message, author, and date.
 
 `git branch`: Lists all the branches in your repository. Use git branch <branch-name> to create a new branch, and git checkout <branch-name> to switch to a different branch.
 
