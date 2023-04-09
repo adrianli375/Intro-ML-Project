@@ -56,7 +56,7 @@ Since you will become a (potential) contributor of this repo, you would like to 
 
 Please ensure that you are working on a branch that is different from `main`. If you are working with the `main` branch, you risk yourself the chance of your files being overwritten by the files in the `main` branch. 
 
-After changing the branch to a suitable one (NOT the main branch), you can pull the files from this repo by running the command `git pull` at your chosen folder location. 
+After changing the branch to a suitable one (NOT the main branch), you can pull the files from this repo by running the command `git pull origin main` at your chosen folder location. 
 
 If you finished editing in your own local repo, you can run the following commands to update your changes in your local branch: 
 0. `git init`: Initialises the `.gitignore` file in your local repository. Run this **only for the first time** before your commit. 
