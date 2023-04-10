@@ -15,6 +15,8 @@ dependencies:
   - xgboost>=1.1.*
   - nltk>=3.5
   - spacy>=3.5
+  - tzlocal>4.0
+  - yfinance>0.2
   - pip>=20
   - pip:
     - mglearn
