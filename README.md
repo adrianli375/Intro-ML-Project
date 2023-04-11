@@ -14,4 +14,4 @@ In the demo folder, this project shows a demonstration example on applied machin
 
 **Demo 4** is about using time-series models to forecast foreign exchange prices. 
 
-**Demo 5** is in progress, and it is about using time-series models (and possibly deep learning models) to forecast gold futures prices. 
+**Demo 5** is about using time-series models and using LSTM (a kind of neural network) to forecast gold futures prices. 
