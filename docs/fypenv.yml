@@ -8,8 +8,6 @@ dependencies:
   - scikit-learn<1.2
   - pandas>=1.4.4
   - requests>=2.24.0
-  - graphviz
-  - python-graphviz
   - lightgbm
   - joblib<1.2
   - xgboost>=1.1.*
@@ -19,6 +17,8 @@ dependencies:
   - spacy>=3.5
   - tzlocal>4.0
   - yfinance>0.2
+  - flask>2.2.0
+  - flask-wtf>1.1.0
   - pip>=20
   - pip:
     - mglearn
