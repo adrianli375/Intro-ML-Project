@@ -10,7 +10,7 @@ Once you have a repository set up, you can use Git commands to add, commit, and 
 
 While Git can be intimidating at first, it's an essential tool for anyone working on software development projects. By understanding the basics of Git, you'll be able to manage your codebase effectively and collaborate with others to create high-quality software.
 
-# How to install git through command line (Reference: [git_installation.md from a course Git repo at the University of British Columbia (UBC)](https://github.com/UBC-CS/cpsc330-2022W2/blob/main/docs/git_installation.md))
+# How to install git through command line ([Reference](https://github.com/UBC-CS/cpsc330-2022W2/blob/main/docs/git_installation.md))
 
 ## Setting up
 
