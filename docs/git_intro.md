@@ -59,10 +59,10 @@ Please ensure that you are working on a branch that is different from `main`. If
 After changing the branch to a suitable one (NOT the main branch), you can pull the files from this repo by running the command `git pull origin main` at your chosen folder location. 
 
 If you finished editing in your own local repo, you can run the following commands to update your changes in your local branch: 
-0. `git init`: Initialises the `.gitignore` file in your local repository. Run this **only for the first time** before your commit. 
-1. `git add .`: Adds the file you would like to stage in your commit. 
-2. `git commit -m "<message>"`: Commits your changes with a pre-specified message. For example, if the message is "changes updated in a file", the command to be typed is `git commit -m "changes updated in a file"`. 
-3. `git push origin <branch-name>`: Push your changes to the branch you specified. For example, if your branch name is `branch-1`, the command to be typed is `git push origin branch-1`. 
+1. `git init`: Initialises the `.gitignore` file in your local repository. Run this **only for the first time** before your commit. 
+2. `git add .`: Adds the file you would like to stage in your commit. 
+3. `git commit -m "<message>"`: Commits your changes with a pre-specified message. For example, if the message is "changes updated in a file", the command to be typed is `git commit -m "changes updated in a file"`. 
+4. `git push origin <branch-name>`: Push your changes to the branch you specified. For example, if your branch name is `branch-1`, the command to be typed is `git push origin branch-1`. 
 
 Finally, if you are the main contributors of the git repo, you can merge branches to the main branch to update to the latest changes. You can achieve this by the following steps: 
 1. `git checkout main`: Switch the branch to the `main` branch
