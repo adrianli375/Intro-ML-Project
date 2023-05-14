@@ -1,6 +1,6 @@
 # Test-Project
 
-This repo is a test project. 
+This repo is a test project, giving some Jupyter Notebooks related to several machine learning tasks. 
 
 In the docs folder, this project shows some demo on how to use git, and some testing libraries. 
 
@@ -15,3 +15,5 @@ In the demo folder, this project shows a demonstration example on applied machin
 **Demo 4** is about using time-series models to forecast foreign exchange prices. 
 
 **Demo 5** is about using time-series models and using LSTM (a kind of neural network) to forecast gold futures prices. 
+
+**Demo 6** is about using the MNIST dataset to classify handwritten digits, using a Convolutional Neural Network (CNN). 
