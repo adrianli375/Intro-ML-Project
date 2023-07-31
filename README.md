@@ -1,6 +1,6 @@
-# Test-Project
+# Intro-ML-Project
 
-This repo is a test project, giving some Jupyter Notebooks related to several machine learning tasks. 
+This repo is a project (tutorial) on some introductory machine learning projects, with some Jupyter Notebooks attached. 
 
 In the docs folder, this project shows some demo on how to use git, and some testing libraries. 
 
