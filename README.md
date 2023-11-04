@@ -17,3 +17,5 @@ In the demo folder, this project shows a demonstration example on applied machin
 **Demo 5** is about using time-series models and using LSTM (a kind of neural network) to forecast gold futures prices. 
 
 **Demo 6** is about using the MNIST dataset to classify handwritten digits, using a Convolutional Neural Network (CNN). 
+
+**Demo 7** is about attempting to classify images that are taken indoors vs outdoors, using a Convolutional Neural Network (CNN). 
